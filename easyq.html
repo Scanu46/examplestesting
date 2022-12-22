@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
      <!-- font awesome cdn link  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-     <script defer src="script.js"></script>
     <title>EuroFlag Frenzy</title>
 
 </head>
@@ -26,14 +25,21 @@
       </ul>
     </nav>
     <div class="background-image">
-    <div class="content-area">
-      <h2 class="difficulty-header">Difficulty: Easy</h2>
-      <div class="text">
-        <p>For those who are new to flags and consider their knowledge in this field to be limited.</p>
-        <p>Easy flags consist of flags that are generally well known, whether it be for political, cultural or other reasons.</p>
-        <p>Are you ready?</p>
-        <a class="difficulty" href="easyq.html">Play</a>
-      </div>
-    </div>
-    </div>
-    </body>
+        <div class="container">
+            <div id="question-container" class="hide">
+              <div id="question">Question</div>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">Start</button>
+              <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+          </div>
+          </div>
+          <script src="script.js"></script>
+</body>
